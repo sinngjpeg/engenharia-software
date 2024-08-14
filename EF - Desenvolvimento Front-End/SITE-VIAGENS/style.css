@@ -1,3 +1,84 @@
-li{
-    color: brown;
+body {
+    font-weight: 400;
+    font-family: Lato, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 2.2em;
+    color: #818181;
+    margin: 0;
+}
+
+header {
+    background-color: #F4511E;
+}
+
+section,
+footer {
+    margin: 40px;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px;
+    font-size: 63px;
+    color: white;
+}
+
+h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+}
+
+nav li a {
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+
+nav li {
+    float: left;
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+}
+
+nav {
+    font-size: 12px;
+    letter-spacing: 4px;
+    height: 50px;
+    background-color: #bd4a4a;
+    padding-right: 40px;
+}
+
+table{
+    width: 100%;
+}
+
+table td {
+    color: #303030;
+    padding: 5px;
+}
+
+table tr:nth-child(even){
+    background-color: #E9E9E9;
+}
+
+table tr:nth-child(odd){
+    background-color: #BDBDBD;
+}
+
+table thead th {
+    background-color: #F4511E;
+    color: white;
+}
+
+#pacotes .figuras figure {
+    display: inline-block;
+}
+
+#pacotes .figuras, #pacotes .video{
+    text-align: center;
 }

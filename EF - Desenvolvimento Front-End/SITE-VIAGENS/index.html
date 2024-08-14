@@ -2,11 +2,6 @@
 <html lang="pt-BR">
 
 <head>
-    <style>
-        p {
-            color: green;
-        }
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -17,23 +12,24 @@
     <header>
         <nav>
             <ul>
-                <li>Pacotes</li>
-                <li>Taxa</li>
-                <li>Contato</li>
+                <li><a href="#">Pacotes</a></li>
+                <li><a href="#">Taxa</a></li>
+                <li><a href="#">Contato</a></li>
             </ul>
         </nav>
-        <h1 style="color: rebeccapurple;">Venha realizar a viagem dos seus sonhos!</h1>
-        <p style="color: blue;">
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
-            It has survived not only five centuries, but also the leap into electronic typesetting, <br>
-            remaining essentially unchanged. <br>
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
+        <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
-    <section>
+    <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
+        It has survived not only five centuries, but also the leap into electronic typesetting, <br>
+        remaining essentially unchanged. <br>
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+    </p>
+    </header>
+    <section id="pacotes">
         <h2>Conheça nossos pacotes</h2>
         <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
@@ -44,21 +40,27 @@
             It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
-        <figure>
-            <img src="img/holambra.jpg" alt="Imagem de lojas em Holambra">
-            <figcaption>Holambra</figcaption>
-        </figure>
-        <figure>
-            <img src="img/lavrinhas.png" alt="Imagem Cachoeira na Capela do Jacu">
-            <figcaption>Capela do Jacu - Lavrinhas</figcaption>
-        </figure>
+        <div class="figuras">
+            <figure>
+                <img src="img/holambra.jpg" alt="Imagem de lojas em Holambra">
+                <figcaption>Holambra</figcaption>
+            </figure>
+            <figure>
+                <img src="img/lavrinhas.png" alt="Imagem Cachoeira na Capela do Jacu">
+                <figcaption>Capela do Jacu - Lavrinhas</figcaption>
+            </figure>
+        </div>
+        <div class="video">
+            <video controls>
+                <source src="video/Capela-do-jacu-Lavrinha-SP.mp4" type="video/mp4">
+                <source src="Capela-do-jacu-Lavrinhas-SP.webm" type="video/webm">
+                <p> Seu navegador não suporta o video. Aqui esta um <a href="Capela-do-jacu-Lavrinha-SP.mp4"> Link para
+                        baixar o
+                        video</a></p>
+            </video>
+        </div>
     </section>
-    <video controls>
-        <source src="video/Capela-do-jacu-Lavrinha-SP.mp4" type="video/mp4">
-        <source src="Capela-do-jacu-Lavrinhas-SP.webm" type="video/webm">
-        <p> Seu navegador não suporta o video. Aqui esta um <a href="Capela-do-jacu-Lavrinha-SP.mp4"> Link para baixar o
-                video</a></p>
-    </video>
+
 
     <section>
         <h2>Orçamento</h2>
@@ -125,7 +127,7 @@
         <h2>Taxas e Serviços</h2>
         <p>Veja nossas taxas, para serviços</p>
         <br><br>
-        <table border>
+        <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
                 <tr>
