@@ -75,10 +75,4 @@ table thead th {
     color: white;
 }
 
-#pacotes .figuras figure {
-    display: inline-block;
-}
 
-#pacotes .figuras, #pacotes .video{
-    text-align: center;
-}
