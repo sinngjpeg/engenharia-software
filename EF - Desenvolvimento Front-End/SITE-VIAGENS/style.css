@@ -7,15 +7,6 @@ body {
     margin: 0;
 }
 
-header {
-    background-color: #F4511E;
-}
-
-section,
-footer {
-    margin: 40px;
-}
-
 h1 {
     text-align: center;
     padding: 20px;

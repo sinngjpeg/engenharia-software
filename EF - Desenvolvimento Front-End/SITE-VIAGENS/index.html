@@ -4,54 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Via Tour</title>
 </head>
 
 <body>
-    <header>
+    <header class="container-fluid p-2 bg-warning text-center">
         <nav class="navbar navbar-expand-lg bg-warning">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#">Viagem dos sonhos</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Taxas</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                  </li>
-                </ul>
-              </div>
+                <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end  bg-warning" id="navbarNavSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Taxas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Contato
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li> <a class="dropdown-item" href="#">Spmething else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </nav>
+        </nav>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
     </header>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-         Excepteur sint occaecat cupidatat non proident, 
-         sunt in culpa qui officia deserunt mollit anim id est laborum.
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        Excepteur sint occaecat cupidatat non proident,
+        sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     </header>
-    <section id="pacotes">
+    <section class="container-fluid bg-light text-center">
         <h2>Conheça nossos pacotes</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
-            It has survived not only five centuries, but also the leap into electronic typesetting, <br>
-            remaining essentially unchanged. <br>
-            It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
+            not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
+            containing Lorem Ipsum passages, <br>
             and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         <div class="row">
@@ -69,52 +87,114 @@
             </figure>
         </div>
     </section>
-    <section>
+    <section class="container-fluid bg-warning">
         <h2>Taxas e Serviços</h2>
         <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
                 <tr>
-                    <th>
-                        Serviço
-                    </th>
-                    <th>
-                        Valor
-                    </th>
+                    <th>Serviço</th>
+                    <th>Valor</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
-                    <td>
-                        Reserva de hotel
-                    </td>
-                    <td>
-                        R$150,00
-                    </td>
+                    <td>Reserva de hotel</td>
+                    <td>R$150,00</td>
                 </tr>
                 <tr>
-                    <td>
-                        Compra de passagens
-                    </td>
-                    <td>
-                        R$100,00
-                    </td>
+                    <td>Compra de passagens</td>
+                    <td>R$100,00</td>
                 </tr>
                 <tr>
-                    <td>
-                        Aluguel de carro
-                    </td>
-                    <td>
-                        R$50,00
-                    </td>
+                    <td>Aluguel de carro</td>
+                    <td>R$50,00</td>
                 </tr>
             </tbody>
         </table>
     </section>
-    <footer>
+
+    <section class="container-fluid bg-light">
+        <h2>Contato</h2>
+        <form method="get" action="">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <label>
+                    Nome:<br>
+                    <input type="text" name="nome"> <br><br>
+                </label>
+                <label>
+                    Email:<br>
+                    <input type="email" name="email" placeholder="email@xyz.com" required> <br><br>
+                </label>
+                <label>
+                    Data de ida:<br>
+                    <input type="date" name="dataIda"> <br><br>
+                </label>
+                <label>
+                    Data de volta:<br>
+                    <input type="date" name="dataVolta"> <br><br>
+                </label>
+                <label>
+                    Quantidade de pessoas:<br>
+                    <input type="number" name="qtdDePessoas"> <br><br>
+                </label>
+                <label>
+                    Comentario:<br>
+                    <textarea name="comentario" rows="5"></textarea> <br><br>
+                </label>
+                <label>
+                    Senha:<br>
+                    <input type="password" name="senha" pattern="[A-Z]{3}^[0-9]{4}"
+                        title="A senha deve ter 3 letras maiusculas e 4 numeros">
+                    <br><br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Qual(ais) serviço(s) você deseja contratar?</legend>
+                <label>
+                    <br><input type="checkbox" name="passagens" value="Passagens">Compra de passagens<br>
+                </label>
+                <label>
+                    <br><input type="checkbox" name="hospedagem" value="Hospedagem">Reserva de hospedagem<br>
+                </label>
+                <label>
+                    <br><input type="checkbox" name="aluguelVeiculos" value="Aluguel de veiculos">Aluguel de
+                    Veiculos<br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend> Escolha a forma de pagamento:</legend>
+                <label>
+                    <br><input type="radio" name="cartaoCredito" value="Cartão de credito">Cartão de crédito<br>
+                </label>
+                <label>
+                    <br><input type="radio" name="boleto" value="Boleto">Boleto<br>
+                </label>
+                <label>
+                    <br><input type="radio" name="pix" value="Pix">Pix<br>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Escolha o prazo:</legend>
+                <select name="prazo">
+                    <option value="Avista">Á vista</option>
+                    <option value="5x">5x</option>
+                    <option value="10X">10x</option>
+                </select>
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="container-fluid bg-warning">
         Desenvolvido por Ingrid Silva
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
