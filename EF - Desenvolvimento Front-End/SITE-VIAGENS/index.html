@@ -11,23 +11,36 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#">Pacotes</a></li>
-                <li><a href="#">Taxa</a></li>
-                <li><a href="#">Contato</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Viagem dos sonhos</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"  aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Pacotes</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Taxas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
         <h1>Venha realizar a viagem dos seus sonhos!</h1>
     </header>
     <p>
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br>
-        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, <br>
-        when an unknown printer took a galley of type and scrambled it to make a type specimen book. <br>
-        It has survived not only five centuries, but also the leap into electronic typesetting, <br>
-        remaining essentially unchanged. <br>
-        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, <br>
-        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+         Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+         Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+         Excepteur sint occaecat cupidatat non proident, 
+         sunt in culpa qui officia deserunt mollit anim id est laborum.
     </p>
     </header>
     <section id="pacotes">
@@ -55,83 +68,9 @@
                 <figcaption>Resende - Rido de Janeiro</figcaption>
             </figure>
         </div>
-        <div class="video">
-            <video controls>
-                <source src="video/Capela-do-jacu-Lavrinha-SP.mp4" type="video/mp4">
-                <source src="Capela-do-jacu-Lavrinhas-SP.webm" type="video/webm">
-                <p> Seu navegador não suporta o video. Aqui esta um <a href="Capela-do-jacu-Lavrinha-SP.mp4"> Link para
-                        baixar o
-                        video</a></p>
-            </video>
-        </div>
-    </section>
-
-
-    <section>
-        <h2>Orçamento</h2>
-        <form method="get" action="">
-
-            <fieldset>
-                <legend>Dados da viagem</legend>
-                <label>Nome</label><br>
-                <input type="text" name="nome"><br><br>
-                <label>Email</label><br>
-                <input type="email" name="email"><br><br>
-                <label>Data de Ida</label><br>
-                <input type="date" name="dataIda"><br><br>
-                <label>Data de Volda</label><br>
-                <input type="date" name="dataVolta"><br><br>
-                <label>Quantidade de pessoas</label><br>
-                <input type="number" name="qtdPessoas"><br><br>
-            </fieldset>
-
-            <fieldset>
-                <legend>Quais serviços deseja contratar?</legend>
-                <label>
-                    <br><input type="checkbox" name="passagens" value="Pasagens">Compra de passagens<br>
-                </label>
-                <label>
-                    <input type="checkbox" name="hospedagem" value="hospedagem">hospedagem<br>
-                </label>
-                <label>
-                    <input type="checkbox" name="veiculos" value="veiculos">Veiculo<br><br>
-                </label>
-            </fieldset><br>
-
-            <fieldset>
-                <legend>Escolha a forma de pagamento</legend>
-                <label>
-                    <br><input type="radio" name="formaPagamento" value="Cartão de Crédito">Cartão de Crédito
-                </label>
-                <label>
-                    <br><input type="radio" name="formaPagamento" value="Boleto">Boleto
-                </label>
-                <label>
-                    <br><input type="radio" name="formaPagamento" value="Pix">Pix
-                </label>
-            </fieldset><br>
-
-            <fieldset>
-                <legend>Escolha o prazo para pagamento</legend>
-                <select name="prazoPagamento">
-                    <option value="aVista">Á vista</option>
-                    <option value="5x">5x sem juros</option>
-                    <option value="10x">10x com juros</option>
-                </select>
-            </fieldset><br>
-
-
-            <label>Comentario</label><br>
-            <textarea rows="5" name="comentario"></textarea><br><br>
-
-            <button>Salvar</button><br>
-
-        </form>
     </section>
     <section>
         <h2>Taxas e Serviços</h2>
-        <p>Veja nossas taxas, para serviços</p>
-        <br><br>
         <table>
             <caption>Descrição dos serviços e respectivos valores</caption>
             <thead>
