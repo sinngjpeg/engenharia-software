@@ -21,26 +21,10 @@ h2 {
     font-weight: 600;
 }
 
-table{
-    width: 100%;
-}
-
-table td {
-    color: #303030;
-    padding: 5px;
-}
-
-table tr:nth-child(even){
-    background-color: #E9E9E9;
-}
-
-table tr:nth-child(odd){
-    background-color: #BDBDBD;
-}
-
-table thead th {
-    background-color: #F4511E;
-    color: white;
+.same-size {
+    width: 200%;
+    height: 300px; /* Defina uma altura fixa */
+    object-fit: cover; /* Mantém a proporção cortando o excesso */
 }
 
 
