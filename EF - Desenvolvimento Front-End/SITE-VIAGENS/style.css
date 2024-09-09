@@ -27,4 +27,9 @@ h2 {
     object-fit: cover; /* Mantém a proporção cortando o excesso */
 }
 
+.carousel-caption h5{
+    font-size: 80px;
+    color: #ffc107;
+    text-shadow: 2px 2px 2px black;
+}
 

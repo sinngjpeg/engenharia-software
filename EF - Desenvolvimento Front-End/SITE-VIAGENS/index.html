@@ -45,47 +45,87 @@
                 </div>
             </div>
         </nav>
-        <h1>Venha realizar a viagem dos seus sonhos!</h1>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/carousel/chapada-dos-veadeiros.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Entre mares e montanhas</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/jericoacoara.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>De norte a sul</h5>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="img/carousel/porto-de-galinhas.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Venha conhecer o Brasil</h5>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </header>
-    <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-        Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+
     </header>
     <section class="container-fluid bg-light text-center p-2">
         <h2>Conheça nossos pacotes</h2>
         <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-            industry's standard dummy text ever since the 1500s,
-            when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived
-            not only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-            containing Lorem Ipsum passages, <br>
-            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-        </p>
-        <div class="row">
-            <figure class="col text-center">
-                <img src="img/holambra.jpg" alt="Imagem de lojas em Holambra" class="img-fluid same-size">
-                <figcaption>Holambra</figcaption>
-            </figure>
-            <figure class="col text-center">
-                <img src="img/lavrinhas.png" alt="Imagem Cachoeira na Capela do Jacu" class="img-fluid same-size">
-                <figcaption>Capela do Jacu - Lavrinhas</figcaption>
-            </figure>
-            <figure class="col text-center">
-                <img src="img/resende.jpg" alt="Imagem do Rio em Resende no Rio de Janeiro" class="img-fluid same-size">
-                <figcaption>Resende - Rido de Janeiro</figcaption>
-            </figure>
-        </div>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry
+             </p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/holambra.jpg" class="card-img-top" alt="Imagem da Cidade de Holambra">
+                    <div class="card-body">
+                      <h5 class="card-title">Holambra - São Paulo</h5>
+                      <p class="card-text">R$200,00</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Em até 24x</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/lavrinhas.png" class="card-img-top" alt="Imagem da Cidade Capela do Jacu">
+                    <div class="card-body">
+                      <h5 class="card-title">Capela do Jacu - Lavrinhas - SP</h5>
+                      <p class="card-text">R$500,00</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Em até 24x</small>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="card h-100">
+                    <img src="img/resende.jpg" class="card-img-top" alt="Imagem da Cidade de Resende">
+                    <div class="card-body">
+                      <h5 class="card-title">Resende - Rio de Janeiro</h5>
+                      <p class="card-text">R$800,00</p>
+                    </div>
+                    <div class="card-footer">
+                      <small class="text-muted">Em até 24x</small>
+                    </div>
+                  </div>
+                </div>
+              </div>
     </section>
     <section class="container-fluid bg-warning text-center p-2">
         <h2>Taxas e Serviços</h2>
