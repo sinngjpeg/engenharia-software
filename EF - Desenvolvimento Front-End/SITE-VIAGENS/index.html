@@ -90,36 +90,39 @@
              </p>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col">
-                  <div class="card h-100">
+                  <div class="card h-100 ">
                     <img src="img/holambra.jpg" class="card-img-top" alt="Imagem da Cidade de Holambra">
-                    <div class="card-body">
+                    <div class="card-body bg-warning ">
                       <h5 class="card-title">Holambra - São Paulo</h5>
                       <p class="card-text">R$200,00</p>
                     </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exempleModal">Reservar</a>
                     <div class="card-footer">
                       <small class="text-muted">Em até 24x</small>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
+                  <div class="card h-100 ">
                     <img src="img/lavrinhas.png" class="card-img-top" alt="Imagem da Cidade Capela do Jacu">
-                    <div class="card-body">
+                    <div class="card-body bg-warning">
                       <h5 class="card-title">Capela do Jacu - Lavrinhas - SP</h5>
                       <p class="card-text">R$500,00</p>
                     </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exempleModal">Reservar</a>
                     <div class="card-footer">
                       <small class="text-muted">Em até 24x</small>
                     </div>
                   </div>
                 </div>
                 <div class="col">
-                  <div class="card h-100">
+                  <div class="card h-100 ">
                     <img src="img/resende.jpg" class="card-img-top" alt="Imagem da Cidade de Resende">
-                    <div class="card-body">
+                    <div class="card-body bg-warning">
                       <h5 class="card-title">Resende - Rio de Janeiro</h5>
                       <p class="card-text">R$800,00</p>
                     </div>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exempleModal">Reservar</a>
                     <div class="card-footer">
                       <small class="text-muted">Em até 24x</small>
                     </div>
@@ -222,5 +225,23 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 </body>
+
+<div class="modal fade" id="exempleModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Suas compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Produto adicionado ao carrinho.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Continuar comprando</button>
+          <button type="button" class="btn btn-success">Finalizar a compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 </html>
