@@ -5,30 +5,30 @@ class Funcionario {
         this.cargo = cargo;
     }
 
-    seApresentar(){
+    seApresentar() {
         console.log(`Oi, meu nome é ${this.nome}, tenho ${this.idade} anos e sou ${this.cargo}.`);
     }
 
-    trabalhar(){
+    trabalhar() {
         console.log(`Estou trabalhando como ${this.cargo}`);
     }
 }
 
-class Gerente extends Funcionario{
-    constructor(nome, idade, departamento){
+class Gerente extends Funcionario {
+    constructor(nome, idade, departamento) {
         super(nome, idade, 'Gerente');
         this.departamento = departamento;
     }
 
     gerenciar() {
-        console.log(`${this.nome} está gerenciando o departamento de ${this.departamento}.`);
+        console.log(`${this.nome} gerencia o departamento de ${this.departamento}.`);
     }
 
 }
 
 class Desenvolvedor extends Funcionario {
     constructor(nome, idade, cargo, linguagem) {
-        super(nome, idade, 'Desenvolvedor');
+        super(nome, idade, 'Desenvolvedor(a)');
         this.linguagem = linguagem;
     }
 
@@ -40,11 +40,10 @@ class Desenvolvedor extends Funcionario {
 
 class Main {
     static iniciar() {
-        // Criando instâncias
-        const gerente = new Gerente('Alice', 40, 'Recursos Humanos');
-        const desenvolvedor = new Desenvolvedor('Carlos', 30, 'JavaScript');
 
-        // Chamando os métodos
+        const gerente = new Gerente('Ingrid', 29, 'Capitulo de Android');
+        const desenvolvedor = new Desenvolvedor('Milene', 33, "Desenvolvedora Mobile", 'Kotlin');
+
         gerente.seApresentar();
         gerente.gerenciar();
 
@@ -53,5 +52,4 @@ class Main {
     }
 }
 
-// Executando o método iniciar da classe Main
 Main.iniciar();
