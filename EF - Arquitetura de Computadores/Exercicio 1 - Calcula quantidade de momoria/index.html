@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Digitalizadora de Livros</title>
+    <script>
+        //Calcula a memória necessária
+        function calculaMemoria(livros, paginasPorLivro, palavrasPorPagina, caracteresPorPalavra) {
+            const bytesPorCaractere = 1;  // 1 caractere = 1 byte
+            const bytesPorMB = 1048576;   // 1 MB = 1.048.576 bytes
+
+            // Calcula caracteres por página
+            const caracteresPorPagina = palavrasPorPagina * caracteresPorPalavra;
+
+            // Calcula caracteres por livro
+            const caracteresPorLivro = paginasPorLivro * caracteresPorPagina;
+
+            // Calcula  caracteres no total do acervo
+            const totalCaracteres = livros * caracteresPorLivro;
+
+            // Converte bytes para megabytes
+            const memoriaEmMB = totalCaracteres / bytesPorMB;
+
+            return memoriaEmMB;
+        }
+
+        function main() {
+            const livros = prompt("Informe a quantidade de livros:");
+            const paginasPorLivro = prompt("Informe a quantidade média de páginas por livro:");
+            const palavrasPorPagina = prompt("Informe a quantidade média de palavras por página:");
+            const caracteresPorPalavra = prompt("Informe a quantidade média de caracteres por palavra:");
+
+            // Realizar o cálculo
+            const memoriaNecessaria = calculaMemoria(
+                parseInt(livros), 
+                parseInt(paginasPorLivro), 
+                parseInt(palavrasPorPagina), 
+                parseInt(caracteresPorPalavra)
+            );
+
+            // Exibe o resultado
+            alert("A quantidade de memória necessária é aproximadamente: " + memoriaNecessaria.toFixed(2) + " MB");
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora Digitalizadora de Livros</h1>
+    <p>Clique no botão abaixo para calcular a quantidade de memória necessária para armazenar o acervo digitalizado.</p>
+
+      <br><br>
+    <button onclick="main()">Calcular Memória</button>
+</body>
+</html>
